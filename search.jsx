@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import SearchBar from './SearchBar';
-import SongTile from './SongTile';
+import SearchBar from './searchbar';
+import SongTile from './songtile';
 
 const Search = ({ onPlay }) => {
   const [results, setResults] = useState([]);
