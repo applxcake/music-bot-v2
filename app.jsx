@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Home from './pages/Home';
-import Search from './pages/Search';
-import Player from './components/Player';
+import Home from './Home';
+import Search from './Search';
+import Player from './Player';
 
 function App() {
   const [currentVideo, setCurrentVideo] = useState(null);
