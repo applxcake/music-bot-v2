@@ -7,7 +7,7 @@ const SearchBar = ({ onResults }) => {
   const handleSearch = async () => {
     try {
       const response = await axios.get(
-        `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&type=video&key=AIzaSyCdOxKAx_lZdyo2k96Gv5mj-qJlCg3ALfQ`
+        `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&type=video&key=YOUR_YT_API_KEY`
       );
       onResults(response.data.items);
     } catch (error) {
