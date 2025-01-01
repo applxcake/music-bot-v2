@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import SongTile from './SongTile';
+import SongTile from './songtile';
 
 const Home = ({ onPlay }) => {
   const [songs, setSongs] = useState([]);
