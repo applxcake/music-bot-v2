@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Home from './home';
-import Search from './search';
-import Player from './player';
+import home from './home';  // Correct the import
+import search from './search';  // Correct the import
+import player from './player';  // Correct the import
 
 function App() {
   const [currentVideo, setCurrentVideo] = useState(null);
@@ -14,15 +14,15 @@ function App() {
       <main>
         {!currentVideo ? (
           <>
-            <Home onPlay={setCurrentVideo} />
-            <Search onPlay={setCurrentVideo} />
+            <home onPlay={setCurrentVideo} />
+            <search onPlay={setCurrentVideo} />
           </>
         ) : (
-          <Player videoId={currentVideo} />
+          <player videoId={currentVideo} />
         )}
       </main>
     </div>
   );
 }
 
-export default app;
+export default App;
